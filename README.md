@@ -1,6 +1,11 @@
 # dad-sort
 dad-sort is an automated inventory sorting tool designed for the game Dark and Darker. It utilizes object detection via YOLOv5 and optical character recognition (OCR) via Tesseract to identify and categorize in-game items, streamlining stash management for players.
 
+## Demo
+The video is sped up for easier viewing.
+
+https://github.com/user-attachments/assets/75e40c46-9d5b-4e15-adfd-a96445a753e9
+
 ## Known Issues
 - Tesseract OCR is sometimes unreliable, resulting in incorrect text parsing and failed item identification.
 - There is a logic error or bug in the sorting algorithm, causing failed item placements.
