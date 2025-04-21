@@ -11,6 +11,10 @@ def sort(stash):
         item = heapq.heappop(stash.pq)
         print("1. ", item)
 
+        # for first row
+        if cur_height == 0:
+            cur_height = item.height
+
         # check bounds and start a new row
         if cur_x + item.width > stash.width:
             cur_y += cur_height
@@ -46,7 +50,6 @@ def main():
     stash = Stash(WIDTH, HEIGHT)
     stash.hover_all_stash()
     print(stash)
-    exit()
     sort(stash)
 
 if __name__ == "__main__":

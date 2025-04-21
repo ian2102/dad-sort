@@ -3,6 +3,7 @@ dad-sort is an automated inventory sorting tool designed for the game Dark and D
 
 ## Known Issues
 - Tesseract OCR is sometimes unreliable, resulting in incorrect text parsing and failed item identification.
+- There is a logic error or bug in the sorting algorithm, causing failed item placements.
 
 ## Contributing
 Contributions are welcome!
