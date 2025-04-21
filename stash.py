@@ -96,8 +96,12 @@ class Stash:
                 item = output[0]
                 item = Item.from_dict(item)
 
-                item.width, item.height = scheme.get_dimensions(item.name)
-                item.position = point
+                # unidentified item
+                if item.name == "0":
+                    item.width, item.height = 1, 1
+                else:
+                    item.width, item.height = scheme.get_dimensions(item.name)
+                    item.position = point
 
                 # Mark all stash cells the item occupies
                 for dx in range(item.width):

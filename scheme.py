@@ -3,7 +3,7 @@ import json
 
 ITEMS_PATH = 'Items'
 
-raritys = ["Junk", "Common", "Uncommon", "Rare", "Epic", "Legendary", "Unique"]
+raritys = ["Junk", "Poor", "Common", "Uncommon", "Rare", "Epic", "Legendary", "Unique"]
 names = [
     os.path.splitext(f)[0] 
     for f in os.listdir(ITEMS_PATH) 
